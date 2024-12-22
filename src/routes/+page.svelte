@@ -44,10 +44,10 @@
 				Perth Glory News
 			</h1>
 			<h2 class="mb-4 text-gray-700 dark:text-gray-200">
-				Your source for the latest Perth Glory FC updates and news
+				Breaking: Glory secure vital first win of the season against Roar!
 			</h2>
 			<p class="mb-16 text-gray-600 dark:text-gray-400">
-				Stay up to date with Perth Glory news, match reports, and team updates.
+				Stay up to date with the latest Perth Glory news, match reports, and team updates.
 			</p>
 		</div>
 	</div>
@@ -58,19 +58,37 @@
 		</h3>
 		<div class="flex flex-col gap-6 md:flex-row">
 			<FeatureCard 
-				title="Match Report: Perth Glory vs Team X" 
+				title="Williams goal seals vital victory over Roar" 
 				href="/match-report-latest" 
 				stringData="Latest Match"
 			/>
 			<FeatureCard
-				title="Team Update: Player News"
+				title="Brown's late penalty secures away point"
 				href="/team-update"
-				stringData="Team News" 
+				stringData="Women's Team" 
 			/>
 			<FeatureCard 
-				title="Next Fixture Preview" 
-				href="/next-fixture" 
-				stringData="Upcoming"
+				title="Defender Canga departs club" 
+				href="/transfer-news" 
+				stringData="Transfer News"
+			/>
+		</div>
+	</section>
+
+	<section class="w-full mb-16">
+		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
+			Recent Results
+		</h3>
+		<div class="flex flex-col gap-6 md:flex-row">
+			<FeatureCard 
+				title="A-League Men: Glory 1-0 Brisbane Roar" 
+				href="/alm-results" 
+				stringData="Men's Team"
+			/>
+			<FeatureCard 
+				title="A-League Women: WSW 1-1 Glory" 
+				href="/alw-results" 
+				stringData="Women's Team"
 			/>
 		</div>
 	</section>
