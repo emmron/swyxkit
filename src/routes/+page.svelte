@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Newsletter from '../components/Newsletter.svelte';
 	import FeatureCard from '../components/FeatureCard.svelte';
 	import LatestPosts from '../components/LatestPosts.svelte';
@@ -9,14 +9,13 @@
 		SITE_DESCRIPTION,
 		DEFAULT_OG_IMAGE,
 		MY_TWITTER_HANDLE
-	} from '$lib/siteConfig';
+	} from '../lib/siteConfig';
 
+	import type { PageData } from './$types';
+	import type { ContentItem } from '../lib/types';
 
-	/** @type {import('./$types').PageData} */
-	export let data;
-	// technically this is a slighlty different type because doesnt have 'content' but we'll let it slide
-	/** @type {import('$lib/types').ContentItem[]} */
-	$: items = data.items;
+	export let data: PageData;
+	$: items = data.items as ContentItem[];
 </script>
 
 <svelte:head>
